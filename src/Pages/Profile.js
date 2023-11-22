@@ -70,11 +70,11 @@ const Profile = () => {
                     <span className="text-white">Location:</span> {singleData.location.name}
                   </div>
                   <div className="mb-2">
-                    <span className="text-gray-900">Episodes:</span>
+                    <span className="text-white">All Episodes:</span>
                     <ul>
                       {singleData.episode.map((episode, index) => (
                        
-                          <a href={episode} key={index} >Episode {index + 1} ,</a>         
+                          <p  key={index} className='text-slate-200' >Episode {index + 1} ,</p>         
                       ))}
                     </ul>
                   </div>
